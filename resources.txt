@@ -1,0 +1,21 @@
+1. https://www.geeksforgeeks.org/socket-programming-cc/ 
+2. Create log file to make debugging easier - https://www.codeproject.com/Questions/97485/how-to-write-log-file-in-C
+3. https://www.youtube.com/playlist?list=PLhnN2F9NiVmAMn9iGB_Rtjs3aGef3GpSm for socket programming understanding
+4. https://www.youtube.com/watch?v=Pg_4Jz8ZIH4 multithreading socket programming in c (Jacob sorber)
+5. To calculate SHA1. https://stackoverflow.com/questions/3467097/correctly-getting-sha-1-for-files-using-openssl
+https://stackoverflow.com/questions/17746688/convert-unsigned-char-to-string
+6. Reading files parts by parts. https://stackoverflow.com/questions/30618424/c-reading-large-files-part-by-part 
+
+HOW TO START AOS ASSG -
+1 - run gfg socket code first
+2 - make 1 server, multiple clients
+    - do simple msg passing b/w client and server
+    - for each client make a separate thread on server side
+    - In assg, command will be passed as a msg which will be processed on server side. So first     make sure that u pass a msg from client->server and receive a reply from server as well, a simple chat environment.
+3 - create a structure which contains all details of a client, like ip, port, username, password, etc.
+4 - refer link above to bind to fixed port no 
+5 - INITIALLY give ip and port no as runtime args instead of using files
+	Eg- ./client 127.1.2.3 5000 127.11.22.33 8000
+	127.1.2.3 5000 - client ip and port
+127.11.22.33 8000 - tracker ip and port
+6 -  Implement create_user and login first, use any convenient data structure(vector, maps, etc) to store details of username and psw on tracker side. Also store these info in client’s details structure mentioned in PT. 3
