@@ -1,0 +1,6 @@
+You will occasionally want to access two resources at once.
+Perhaps you are using one of the resources, and then discover 
+that the other resource is needed as well. There could be a problem 
+if two threads attempt to claim both resources but lock the associated 
+mutexes in different orders. For example, if the two threads lock mutexes 1 and 2 respectively, then
+a deadlock occurs when each attempts to lock the other mutex. Example 4-2 shows possible deadlock scenarios.
